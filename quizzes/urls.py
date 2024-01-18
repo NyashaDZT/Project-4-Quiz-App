@@ -8,5 +8,5 @@ urlpatterns = [
 
     # Path: /quiz/:id/
     # Methods: GET, PUT, PATCH, DELETE
-    path('quiz/<int:pk>/', QuizDetailView.as_view(), name='quiz-detail'),
+    path('<int:pk>/', QuizDetailView.as_view(), name='quiz-detail'),
 ]

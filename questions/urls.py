@@ -10,10 +10,10 @@ from .views import QuestionListCreateView, QuestionDetailView, AnswerListCreateV
 
 urlpatterns = [
     # Question URLs
-    path('questions/', QuestionListCreateView.as_view(), name='question-list'),
-    path('questions/<int:pk>/', QuestionDetailView.as_view(), name='question-detail'),
+    path('', QuestionListCreateView.as_view(), name='question-list'),
+    path('<int:pk>/', QuestionDetailView.as_view(), name='question-detail'),
 
     # Answer URLs
-    path('answers/', AnswerListCreateView.as_view(), name='answer-list'),
+    path('', AnswerListCreateView.as_view(), name='answer-list'),
     path('answers/<int:pk>/', AnswerDetailView.as_view(), name='answer-detail'),
 ]

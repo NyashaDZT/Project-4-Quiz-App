@@ -3,9 +3,10 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Quiz
 from .serializers.common import QuizSerializer
 from .serializers.populated import PopulatedQuizSerializer
-from libs.permissions import IsOwnerOrReadOnly  # Assuming you have this permission class
+from libs.permissions import IsOwnerOrReadOnly  
+from libs.views import OwnerListCreateView
 
-class QuizListCreateView(ListCreateAPIView):
+class QuizListCreateView(OwnerListCreateView):
   queryset = Quiz.objects.all()
   serializer_class = QuizSerializer
   permission_classes = [IsAuthenticatedOrReadOnly]
@@ -23,3 +24,5 @@ class QuizDetailView(RetrieveUpdateDestroyAPIView):
     if self.request.method == 'PUT':
         return QuizSerializer
     return PopulatedQuizSerializer
+  
+
