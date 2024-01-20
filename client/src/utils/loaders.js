@@ -10,7 +10,7 @@ export async function quizLoader() {
 }
 
 export async function singleQuizLoader(quizId) {
-  const res = await fetch(`/api/houses/${quizId}`)
+  const res = await fetch(`/api/quizzes/${quizId}`)
   if (!res.ok) {
     throw new Error(`Failed to fetch quiz: ${res.statusText}`);
   }
@@ -18,7 +18,7 @@ export async function singleQuizLoader(quizId) {
 }
 
 export async function singleQuestionLoader(questionId) {
-  const res = await fetch(`/api/houses/${questionId}`)
+  const res = await fetch(`/api/questions/${questionId}`)
   if (!res.ok) {
     throw new Error(`Failed to fetch question: ${res.statusText}`);
   }

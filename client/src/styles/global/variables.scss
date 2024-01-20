@@ -1,0 +1,36 @@
+%flex-fill{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@mixin flex-center($direction){
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-top($direction){
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin background-image($size){
+  background-size: $size;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin radial-background($colour){
+  border: none;
+  border-radius: 50%;
+  background-image: radial-gradient($colour 0%, rgba(255, 255, 255, 0) 55%, rgba(255,255,255,0) 100%);
+}
