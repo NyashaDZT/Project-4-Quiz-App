@@ -26,8 +26,9 @@ export default function Filter({ quizzes, setFilteredQuizzes }) {
 
   return (
     <div className="filter-container">
-      <label>
-        Topic:
+      <h3>Filters</h3>
+      <div className="filter-group">
+        <label>Topic:</label>
         <select value={selectedTopic} onChange={(e) => setSelectedTopic(e.target.value)}>
           <option value="">All Topics</option>
           {/* Add options dynamically based on available topics */}
@@ -37,20 +38,20 @@ export default function Filter({ quizzes, setFilteredQuizzes }) {
             </option>
           ))}
         </select>
-      </label>
+      </div>
 
-      <label>
-        Difficulty:
+      <div className="filter-group">
+        <label>Difficulty:</label>
         <select value={selectedDifficulty} onChange={(e) => setSelectedDifficulty(e.target.value)}>
           <option value="">All Difficulties</option>
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
-      </label>
+      </div>
 
-      <label>
-        Number of Questions:
+      <div className="filter-group">
+        <label>Number of Questions:</label>
         <select value={selectedNumQuestions} onChange={(e) => setSelectedNumQuestions(e.target.value)}>
           <option value="">All Numbers</option>
           {/* Add options dynamically based on available number of questions */}
@@ -60,7 +61,7 @@ export default function Filter({ quizzes, setFilteredQuizzes }) {
             </option>
           ))}
         </select>
-      </label>
+      </div>
     </div>
   );
 }

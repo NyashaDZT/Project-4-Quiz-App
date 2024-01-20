@@ -2,6 +2,11 @@
 @import './global/forms.scss';
 @import './components/Filter.scss';
 
+* {
+  margin: 0px;
+  
+}
+
 .quizzes {
   width: 100vw;
   height: 100vh;

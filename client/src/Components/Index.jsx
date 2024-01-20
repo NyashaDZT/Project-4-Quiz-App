@@ -1,7 +1,6 @@
 import { useLoaderData, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card'
@@ -23,14 +22,14 @@ export default function Index(){
   return (
     <>
       <Row>
-        <Col xs={4} md={4}>
+        <Col xs={4} md={4} id="filters">
           <Filter quizzes={quizzes} setFilteredQuizzes={setFilteredQuizzes} />
         </Col>
         <Col xs={14} md={8}>khkjhjgjhg
           <section className="quizzes" id="view">
           {filteredQuizzes.map(quiz => (
               <Link key={quiz.id} to={`/quizzes/${quiz.id}`} style={{ textDecoration: 'none' }}>
-                <Card className="mb-4" style={{ cursor: 'pointer' }}>
+                <Card className="mb-4 card" style={{ cursor: 'pointer' }}>
                   <Card.Body>
                     <Card.Title>{quiz.name}</Card.Title>
                     <Card.Text>{quiz.topic}</Card.Text>

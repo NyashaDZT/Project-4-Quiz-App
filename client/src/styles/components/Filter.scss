@@ -1,7 +1,19 @@
 .filter-container {
-  background: #ffffff;
-  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
+}
+
+.filter-group {
+  margin-right: 20px; /* Adjust the margin as needed */
+  text-align: center; /* Center-align the label and dropdown */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Add some space between label and dropdown */
+}
+
+.card {
+  max-width: 700px;
 }
