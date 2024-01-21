@@ -16,6 +16,7 @@ import SingleQuizView from './Components/SingleQuizView.jsx';
 // Actions
 import { loginUser, registerUser } from './utils/actions/auth.js'
 import { quizLoader, singleQuizLoader } from './utils/loaders.js';
+import { createResult } from './utils/actions/results.js';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,8 @@ const router = createBrowserRouter([
       {
         path: '/quizzes/:quizId',
         element: <SingleQuizView />,
-        loader: async ({ params }) => singleQuizLoader(params.quizId)
+        loader: async ({ params }) => singleQuizLoader(params.quizId),
+        action: async ({ request }) => createResult(request)
       }
 
     ]

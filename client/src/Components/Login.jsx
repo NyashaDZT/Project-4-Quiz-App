@@ -8,8 +8,8 @@ export default function Login(){
 
   useEffect(() => {
     if(res?.status === 200) {
-      setToken(res.data.token)
-      navigate('/')
+      setToken(res.data.access)
+      navigate('/quizzes')
     }
   }, [res, navigate])
 
