@@ -1,47 +1,73 @@
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useActionData, useLoaderData } from 'react-router';
 import { activeUser } from '../utils/helpers/common';
 
 export default function SingleQuizView() {
 
-  const user = activeUser()
-  const res = useActionData
+  const userId = activeUser()
+  const res = useActionData()
   const quiz = useLoaderData()
+  const quizId = quiz.id
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState([])
 
   const isLastQuestion = currentQuestionIndex === quiz.questions.length -1
-  const currentQuestion = quiz.questions[currentQuestionIndex];
+  const currentQuestion = quiz.questions[currentQuestionIndex]
+
+  const formRef = useRef(null)
+
+  const handleAnswerSelect = (selectedAnswer) => {
+    setSelectedAnswers((prevAnswers) => {
+      const newAnswers = [...prevAnswers];
+      newAnswers[currentQuestionIndex] = selectedAnswer;
+      return newAnswers;
+    })
+  }
+
+  const createResult = (userId, quizId, user_score) => {
+    const data = {
+      user: userId,
+      quiz: quizId,
+      score: user_score,
+    }
+    console.log(data);
+    // Perform any additional logic for result creation or API submission
+  }
+
 
   const calculateScore = () => {
-    let score = 0;
+    let user_score = 0;
     quiz.questions.forEach((question, index) => {
         const selectedAnswer = selectedAnswers[index];
-        const correctAnswer = question.answers.find((answer) => answer.correct);
+        const correctAnswer = question.answers.find((answer) => answer.correct)
 
         if (selectedAnswer && selectedAnswer === correctAnswer) {
-            score++;
+            user_score++;
+            console.log(correctAnswer)
         }
     });
+    console.log('Score:', user_score);
+    return createResult(userId, quizId, user_score)
+  }
 
-    console.log('Score:', score);
-  };
+  
 
-  const handleAnswerSubmit = () => {
-    // Implement logic to handle answer submission
-    // You may want to check if an answer is selected and update the state accordingly
-    // You can also navigate to the next question or submit the quiz based on your logic
-    // Update the state or navigate based on your requirements
+
+
+  const handleButtonClick = () => {
     if (isLastQuestion) {
-      // Submit quiz logic
       calculateScore()
+      // Submit the form programmatically
+      formRef.current.submit();
     } else {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      
     }
   };
+
+  const buttonLabel = isLastQuestion ? 'Submit' : 'Next Question';
+
 
 
   return (
@@ -57,17 +83,17 @@ export default function SingleQuizView() {
                   type="checkbox"
                   id={answer.text}
                   name={answer.text}
-                  // Add any necessary state or event handlers for answer selection
+                  onChange={() => handleAnswerSelect(answer)}
                 />
                 <label htmlFor={answer.text}>{answer.text}</label>
               </div>
             ))}
           </form>
-          <button onClick={handleAnswerSubmit}>
+          <button onClick={handleButtonClick}>
             {isLastQuestion ? 'Submit' : 'Next Question'}
           </button>
         </div>
       )}
     </div>
-  );
+  )
 }
