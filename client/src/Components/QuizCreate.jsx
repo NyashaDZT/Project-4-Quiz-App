@@ -13,9 +13,12 @@ export default function QuizCreate() {
   const [quizData, setQuizData] = useState({
     name: '',
     description: '',
-    questionsCount: 1, // Default to one question
-    questions: [{ text: '', answers: [{ text: '', correct: false }] }],
+    topic: '', 
+    number_of_questions: 1,
+    time: 20,
+    pass_score: 0,
     owner: user,
+    questions: [{ text: '', answers: [{ text: '', correct: false }] }],
   })
 
   const handleInputChange = (field, value) => {
@@ -61,10 +64,10 @@ export default function QuizCreate() {
   }
 
   const handleAddQuestion = () => {
-    if (quizData.questionsCount < 10) {
+    if (quizData.number_of_questions < 10) {
       setQuizData((prevData) => ({
         ...prevData,
-        questionsCount: prevData.questionsCount + 1,
+        number_of_questions: prevData.number_of_questions+ 1,
         questions: [...prevData.questions, { text: '', answers: [{ text: '', correct: false }] }],
       }))
     }
@@ -132,6 +135,29 @@ export default function QuizCreate() {
             onChange={(e) => handleInputChange('description', e.target.value)}
           />
         </Form.Group>
+
+        <Form.Group controlId="quizTopic">
+              <Form.Label>Topic</Form.Label>
+              <Form.Control
+              type="text"
+              placeholder="Enter quiz topic"
+              value={quizData.topic}
+              onChange={(e) => handleInputChange('topic', e.target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group controlId="quizDifficulty">
+              <Form.Label>Difficulty</Form.Label>
+              <Form.Control
+                as="select"
+                value={quizData.difficulty}
+                onChange={(e) => handleInputChange('difficulty', e.target.value)}
+                >
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              </Form.Control>
+            </Form.Group>
   
         {[...Array(quizData.questionsCount)].map((_, questionIndex) => (
           <div key={questionIndex}>
