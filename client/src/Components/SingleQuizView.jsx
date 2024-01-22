@@ -1,84 +1,83 @@
-
 import { useState, useRef } from 'react';
-import { useActionData, useLoaderData } from 'react-router';
-import { activeUser } from '../utils/helpers/common';
+import { useLoaderData, useNavigate } from 'react-router';
+import axios from 'axios';
+import { activeUser, getToken } from '../utils/helpers/common';
 
 export default function SingleQuizView() {
-
   const userId = activeUser()
-  const res = useActionData()
+  const navigate = useNavigate()
   const quiz = useLoaderData()
   const quizId = quiz.id
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState([])
-
-  const isLastQuestion = currentQuestionIndex === quiz.questions.length -1
-  const currentQuestion = quiz.questions[currentQuestionIndex]
-
+  const [selectedAnswers, setSelectedAnswers] = useState([]);
   const formRef = useRef(null)
+
+  const isLastQuestion = currentQuestionIndex === quiz.questions.length - 1
+  const currentQuestion = quiz.questions[currentQuestionIndex]
 
   const handleAnswerSelect = (selectedAnswer) => {
     setSelectedAnswers((prevAnswers) => {
-      const newAnswers = [...prevAnswers];
-      newAnswers[currentQuestionIndex] = selectedAnswer;
-      return newAnswers;
-    })
-  }
-
-  const createResult = (userId, quizId, user_score) => {
-    const data = {
-      user: userId,
-      quiz: quizId,
-      score: user_score,
-    }
-    console.log(data);
-    // Perform any additional logic for result creation or API submission
-  }
-
+      const newAnswers = [...prevAnswers]
+      newAnswers[currentQuestionIndex] = selectedAnswer
+      return newAnswers
+    });
+  };
 
   const calculateScore = () => {
     let user_score = 0;
     quiz.questions.forEach((question, index) => {
-        const selectedAnswer = selectedAnswers[index];
-        const correctAnswer = question.answers.find((answer) => answer.correct)
+      const selectedAnswer = selectedAnswers[index];
+      const correctAnswer = question.answers.find((answer) => answer.correct);
 
-        if (selectedAnswer && selectedAnswer === correctAnswer) {
-            user_score++;
-            console.log(correctAnswer)
-        }
-    });
+      if (selectedAnswer && selectedAnswer === correctAnswer) {
+        user_score++;
+      }
+    })
     console.log('Score:', user_score);
-    return createResult(userId, quizId, user_score)
+    return user_score
   }
 
-  
-
-
-
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
     if (isLastQuestion) {
-      calculateScore()
-      // Submit the form programmatically
-      formRef.current.submit();
+      const userScore = calculateScore();
+      const resultData = {
+        user: userId,
+        quiz: quizId,
+        score: userScore,
+      }
+      console.log(resultData)
+      try {
+        const response = await axios.post('/api/results/', resultData, {
+          validateStatus: () => true,
+          headers: {
+            Authorization: `Bearer ${getToken()}`,
+          },
+        })
+
+        if (response.status === 201) {
+          console.log('Result submitted successfully:', response.data)
+          navigate('/result-page')
+        } else {
+          console.error('Failed to submit result:', response.statusText)
+        }
+      } catch (error) {
+        console.error('Error submitting result:', error)
+      }
     } else {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1)
     }
   };
 
-  const buttonLabel = isLastQuestion ? 'Submit' : 'Next Question';
-
-
-
   return (
-    <div>
-      <h1>{quiz.name}</h1>
+    <div style={{ textAlign: 'center', padding: '20px' }}>
+      <h1 style={{ fontSize: '24px' }}>{quiz.name}</h1>
       {currentQuestion && (
-        <div>
-          <h2>{currentQuestion.text}</h2>
-          <form>
+        <div style={{ marginTop: '20px' }}>
+          <h2 style={{ fontSize: '20px' }}>{currentQuestion.text}</h2>
+          <form ref={formRef}>
             {currentQuestion.answers.map((answer) => (
-              <div key={answer.text}>
+              <div key={answer.text} style={{ margin: '10px 0' }}>
                 <input
                   type="checkbox"
                   id={answer.text}
@@ -89,7 +88,19 @@ export default function SingleQuizView() {
               </div>
             ))}
           </form>
-          <button onClick={handleButtonClick}>
+          <button
+            style={{
+              backgroundColor: '#4CAF50',
+              color: 'white',
+              padding: '10px 20px',
+              fontSize: '18px',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              marginTop: '20px',
+            }}
+            onClick={handleButtonClick}
+          >
             {isLastQuestion ? 'Submit' : 'Next Question'}
           </button>
         </div>

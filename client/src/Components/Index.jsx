@@ -25,7 +25,7 @@ export default function Index(){
         <Col xs={4} md={4} id="filters">
           <Filter quizzes={quizzes} setFilteredQuizzes={setFilteredQuizzes} />
         </Col>
-        <Col xs={14} md={8}>khkjhjgjhg
+        <Col xs={14} md={8}>
           <section className="quizzes" id="view">
           {filteredQuizzes.map(quiz => (
               <Link key={quiz.id} to={`/quizzes/${quiz.id}`} style={{ textDecoration: 'none' }}>

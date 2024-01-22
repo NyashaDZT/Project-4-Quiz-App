@@ -12,11 +12,13 @@ import Login from './Components/Login.jsx'
 import Register from './Components/Register.jsx'
 import Index from './Components/Index.jsx'
 import SingleQuizView from './Components/SingleQuizView.jsx';
+import QuizCreate from './Components/QuizCreate.jsx';
 
 // Actions
 import { loginUser, registerUser } from './utils/actions/auth.js'
 import { quizLoader, singleQuizLoader } from './utils/loaders.js';
-import { createResult } from './utils/actions/results.js';
+import { createQuiz } from './utils/actions/quiz.js';
+
 
 const router = createBrowserRouter([
   {
@@ -46,7 +48,11 @@ const router = createBrowserRouter([
         path: '/quizzes/:quizId',
         element: <SingleQuizView />,
         loader: async ({ params }) => singleQuizLoader(params.quizId),
-        action: async ({ request }) => createResult(request)
+      },
+      {
+        path: '/createquiz',
+        element: <QuizCreate />,
+        action: async ({ request }) => createQuiz(request)
       }
 
     ]

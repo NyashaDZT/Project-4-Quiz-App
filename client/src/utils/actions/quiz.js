@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { formToObj, getToken} from '../helpers/common'
 
-export async function createResult(request) {
+export async function createQuiz(request) {
   const data = await formToObj(request)
-  return await axios.post(`/api/results`, data, {
+  return await axios.post(`/api/quizzes/`, data, {
       validateStatus: () => true,
       headers: {
           Authorization: `Bearer ${getToken()}`
