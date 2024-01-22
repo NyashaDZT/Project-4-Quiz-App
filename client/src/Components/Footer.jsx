@@ -17,5 +17,5 @@ export default function Footer() {
         Visit my GitHub
       </a>
     </div>
-  );
+  )
 }
