@@ -2,7 +2,7 @@ import { getToken } from "./helpers/common"
 import axios from "axios"
 
 export async function quizLoader() {
-  const res = await fetch(`/api/quizzes`)
+  const res = await fetch(`/api/quizzes/`)
   if (!res.ok) {
     throw new Error(`Failed to fetch quizzes: ${res.statusText}`);
   }
@@ -10,7 +10,7 @@ export async function quizLoader() {
 }
 
 export async function singleQuizLoader(quizId) {
-  const res = await fetch(`/api/quizzes/${quizId}`)
+  const res = await fetch(`/api/quizzes/${quizId}/`)
   if (!res.ok) {
     throw new Error(`Failed to fetch quiz: ${res.statusText}`);
   }
@@ -18,7 +18,7 @@ export async function singleQuizLoader(quizId) {
 }
 
 export async function singleQuestionLoader(questionId) {
-  const res = await fetch(`/api/questions/${questionId}`)
+  const res = await fetch(`/api/questions/${questionId}/`)
   if (!res.ok) {
     throw new Error(`Failed to fetch question: ${res.statusText}`);
   }
@@ -26,7 +26,7 @@ export async function singleQuestionLoader(questionId) {
 }
 
 export async function profileLoader(userId) {
-  const res = await axios.get(`/api/auth/profile/${userId}`, {
+  const res = await axios.get(`/api/auth/profile/${userId}/`, {
     validateStatus: () => true,
     headers: {
         Authorization: `Bearer ${getToken()}`
