@@ -193,13 +193,15 @@ export default function QuizCreate() {
           </div>
         ))}
   
-        <Button variant="primary" onClick={handleAddQuestion}>
-          Add Question
-        </Button>
-  
-        <Button variant="success" type="submit" >
-          Create Quiz
-        </Button>
+        <div className='button-container'>
+          <Button variant="primary" onClick={handleAddQuestion}>
+            Add Question
+          </Button>
+              
+          <Button variant="success" type="submit" >
+            Create Quiz
+          </Button>
+        </div>
       </Form>
     </Container>
   )

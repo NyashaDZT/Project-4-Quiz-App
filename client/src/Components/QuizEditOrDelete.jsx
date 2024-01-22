@@ -218,18 +218,19 @@ export default function QuizEditOrDelete() {
             </Button>
           </div>
         ))}
+        <div className='button-container'>
+          <Button variant="primary" onClick={handleAddQuestion}>
+            Add Question
+          </Button>
 
-        <Button variant="primary" onClick={handleAddQuestion}>
-          Add Question
-        </Button>
+          <Button variant="warning" type="submit">
+            Update Quiz
+          </Button>
 
-        <Button variant="warning" type="submit">
-          Update Quiz
-        </Button>
-
-        <Button variant="danger" onClick={handleDeleteQuiz}>
-          Delete Quiz
-        </Button>
+          <Button variant="danger" onClick={handleDeleteQuiz}>
+            Delete Quiz
+          </Button>
+        </div>
       </Form>
     </Container>
   )
