@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { activeUser, getToken } from '../utils/helpers/common';
-import { useActionData, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import axios from 'axios';
 
 
 export default function QuizCreate() {
-  const res = useActionData()
   const navigate = useNavigate()
   const user = activeUser()
 

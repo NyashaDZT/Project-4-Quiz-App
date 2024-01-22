@@ -16,8 +16,9 @@ import QuizCreate from './Components/QuizCreate.jsx';
 
 // Actions
 import { loginUser, registerUser } from './utils/actions/auth.js'
-import { quizLoader, singleQuizLoader } from './utils/loaders.js';
+import { profileLoader, quizLoader, singleQuizLoader } from './utils/loaders.js';
 import { createQuiz } from './utils/actions/quiz.js';
+import Profile from './Components/Profile.jsx';
 
 
 const router = createBrowserRouter([
@@ -53,7 +54,12 @@ const router = createBrowserRouter([
         path: '/createquiz',
         element: <QuizCreate />,
         action: async ({ request }) => createQuiz(request)
-      }
+      },
+      {
+        path: '/profile/:userId',
+        element: <Profile />,
+        loader: async ({ params }) => profileLoader(params.userId)
+    }
 
     ]
   }

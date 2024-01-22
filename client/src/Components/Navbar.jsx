@@ -10,6 +10,7 @@ import { removeToken, activeUser, getToken } from '../utils/helpers/common'
 export default function NavBar(){
 
   const navigate = useNavigate()
+  const userId = activeUser()
   
   
   const handleLogout = () => {
@@ -30,7 +31,7 @@ export default function NavBar(){
                 <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
                 <NavDropdown title="More Options" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="/createquiz">Create A Quiz</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href={`/profile/${userId}`}>Profile Page</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
                 </NavDropdown>

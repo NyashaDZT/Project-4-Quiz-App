@@ -1,6 +1,8 @@
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView
 from .serializer.common import RegistrationSerializer
 from django.contrib.auth import get_user_model
+from .serializer.populated import UserSerializer
+from rest_framework.permissions import IsAuthenticated
 
 User= get_user_model()
 
@@ -14,6 +16,12 @@ class RegisterView(CreateAPIView):
         data = self.request.data
         print("Received data:", data)
 
-        # Perform the create operation using the serializer
         serializer.save()
   
+
+class UserProfileView(RetrieveAPIView):
+  serializer_class = UserSerializer
+  permission_classes = [IsAuthenticated]
+
+  def get_object(self):
+      return self.request.user
