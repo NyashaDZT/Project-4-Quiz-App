@@ -1,17 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
-import { activeUser } from '../utils/helpers/common';
-import { useActionData } from 'react-router';
+import { activeUser, getToken } from '../utils/helpers/common';
+import { useActionData, useNavigate } from 'react-router';
+import axios from 'axios';
+
 
 export default function QuizCreate() {
-  const res = useActionData
+  const res = useActionData()
+  const navigate = useNavigate()
   const user = activeUser()
+
   const [quizData, setQuizData] = useState({
     name: '',
     description: '',
     questionsCount: 1, // Default to one question
     questions: [{ text: '', answers: [{ text: '', correct: false }] }],
-    owner: user ? user.id : null,
+    owner: user,
   })
 
   const handleInputChange = (field, value) => {
@@ -77,14 +81,37 @@ export default function QuizCreate() {
     })
   }
 
-  const handleCreateQuiz = () => {
+  const handleCreateQuiz = async (e) => {
+    e.preventDefault();
+    
+    try {
+      console.log(quizData)
   
-  }
+      const response = await axios.post(`http://127.0.0.1:8000/api/quizzes/`, quizData, {
+        validateStatus: () => true,
+        headers: {
+          Authorization: `Bearer ${getToken()}`
+        }
+      });
+  
+      if (response.status === 200) {
+        console.log('Quiz created successfully:', response.data)
+        // Handle successful quiz creation, e.g., redirect to quiz list page
+        navigate('/quizzes')
+      } else {
+        console.error('Failed to create quiz:', response.statusText)
+        // Handle the error case if needed
+      }
+    } catch (error) {
+      console.error('Error creating quiz:', error)
+      // Handle any other errors that may occur during the API call
+    }
+  };
 
   return (
     <Container>
       <h1>Create a Quiz</h1>
-      <Form method="POST">
+      <Form method="POST" onSubmit={handleCreateQuiz}>
         <Form.Group controlId="quizName">
           <Form.Label>Quiz Name</Form.Label>
           <Form.Control
@@ -145,7 +172,7 @@ export default function QuizCreate() {
           Add Question
         </Button>
   
-        <Button variant="success" onClick={handleCreateQuiz} type="submit">
+        <Button variant="success" type="submit" >
           Create Quiz
         </Button>
       </Form>
