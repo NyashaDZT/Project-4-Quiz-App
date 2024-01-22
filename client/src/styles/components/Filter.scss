@@ -11,9 +11,29 @@
 
 label {
   display: block;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels bold for better visibility */
 }
 
 .card {
   max-width: 700px;
+  transition: transform 0.3s
+}
+
+.card:hover {
+  transform: scale(1.03); /* Scale the card slightly on hover for a subtle effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card, .card-body {
+  border-radius: 8px;
+}
+
+.card a {
+  color: inherit;
+  text-decoration: none;
 }

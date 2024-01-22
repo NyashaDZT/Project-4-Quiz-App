@@ -57,7 +57,7 @@ export default function SingleQuizView() {
 
         if (response.status === 201) {
           console.log('Result submitted successfully:', response.data)
-          navigate('/result-page')
+          navigate(`/profile/${userId}`)
         } else {
           console.error('Failed to submit result:', response.statusText)
         }

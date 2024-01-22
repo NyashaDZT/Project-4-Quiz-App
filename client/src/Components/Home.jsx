@@ -1,8 +1,44 @@
-export default function Home(){
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { activeUser } from '../utils/helpers/common';
+
+export default function Home() {
+  const user = activeUser()
+
   return (
-    <>
-      <h1>Hello World</h1>
-      
-    </>
+    <Container className="mt-5">
+      <Row className="justify-content-center">
+        <Col xs={10} md={8} lg={6}>
+          <h1>Welcome to Quizlympics</h1>
+          <p className="lead">
+            Quizlympics is an exciting platform to test and enhance your knowledge.
+            Get ready for a challenging quiz experience!
+          </p>
+          <div className="text-center mt-4">
+            {user ? (
+              <Link to="/quizzes">
+                <Button variant="success">
+                  Explore Quizzes
+                </Button>
+              </Link>
+            ) : (
+              <>
+                <Link to="/login">
+                  <Button variant="primary" className="mr-3">
+                    Login
+                  </Button>
+                </Link>
+                <Link to="/register">
+                  <Button variant="secondary">
+                    Register
+                  </Button>
+                </Link>
+              </>
+            )}
+          </div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
