@@ -7,19 +7,19 @@ import './styles/main.scss'
 
 // Page components
 import App from './App.jsx'
-import Home from './Components/Home.jsx'
-import Login from './Components/Login.jsx'
-import Register from './Components/Register.jsx'
-import Index from './Components/Index.jsx'
-import SingleQuizView from './Components/SingleQuizView.jsx';
-import QuizCreate from './Components/QuizCreate.jsx';
-import QuizEditOrDelete from './Components/QuizEditOrDelete.jsx'
+import Home from './components/Home.jsx'
+import Login from './components/Login.jsx'
+import Register from './components/Register.jsx'
+import Index from './components/Index.jsx'
+import SingleQuizView from './components/SingleQuizView.jsx';
+import QuizCreate from './components/QuizCreate.jsx';
+import QuizEditOrDelete from './components/QuizEditOrDelete.jsx'
 
 // Actions
 import { loginUser, registerUser } from './utils/actions/auth.js'
 import { profileLoader, quizLoader, singleQuizLoader } from './utils/loaders.js';
 import { createQuiz } from './utils/actions/quiz.js';
-import Profile from './Components/Profile.jsx';
+import Profile from './components/Profile.jsx';
 
 
 const router = createBrowserRouter([

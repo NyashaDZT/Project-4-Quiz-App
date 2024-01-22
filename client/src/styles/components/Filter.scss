@@ -15,9 +15,21 @@ label {
   font-weight: bold; /* Make labels bold for better visibility */
 }
 
+.quizzes {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px; /* Set a max-width to limit the container size */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .card {
-  max-width: 700px;
-  transition: transform 0.3s
+  width: 300px; /* Adjust the width as needed */
+  margin: 10px; /* Add margin for spacing */
+  max-height: 100px;
+  cursor: pointer;
 }
 
 .card:hover {

@@ -1,6 +1,8 @@
 import { useLoaderData, Link } from "react-router-dom";
 import { activeUser } from "../utils/helpers/common";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import admin from '../images/admin.jpg'
+
 
 export default function Profile() {
   const userId = activeUser()
@@ -20,12 +22,21 @@ export default function Profile() {
       <Row className="mt-4">
         <Col md={3}>
           <div className="profile-container">
+          {user.profile_picture ? (
             <Image
               src={user.profile_picture}
               alt="Profile"
               roundedCircle
               className="profile-picture"
             />
+      )     : (
+            <Image
+              src={admin}
+              alt="Default Profile"
+              roundedCircle
+              className="profile-picture"
+            />
+          )}
             <h4 className="mt-2">{user.username}</h4>
             <p>{user.bio}</p>
           </div>

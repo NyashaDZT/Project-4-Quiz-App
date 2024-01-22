@@ -33,7 +33,7 @@ export default function NavBar(){
                   <NavDropdown.Item href="/createquiz">Create A Quiz</NavDropdown.Item>
                   <NavDropdown.Item href={`/profile/${userId}`}>Profile Page</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                  <NavDropdown.Item href="#action5">Write a Review</NavDropdown.Item>
                 </NavDropdown>
               </>
             ) : (
