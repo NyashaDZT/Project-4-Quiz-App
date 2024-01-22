@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { activeUser, getToken } from '../utils/helpers/common';
-import { useActionData, useNavigate } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 import axios from 'axios';
 
 export default function QuizEditOrDelete() {
-  const res = useActionData()
+  const quiz = useLoaderData()
   const navigate = useNavigate()
   const user = activeUser()
 
@@ -14,7 +14,7 @@ export default function QuizEditOrDelete() {
     description: '',
     topic: '',
     difficulty: 'easy',
-    number_of_questions: 1, // Default to one question
+    number_of_questions: 1,
     questions: [{ text: '', answers: [{ text: '', correct: false }] }],
     owner: user ? user.id : null,
   })
@@ -83,36 +83,42 @@ export default function QuizEditOrDelete() {
   }
 
   useEffect(() => {
+    if (quiz && quiz.data) {
+      setQuizData(quiz);
+      console.log(quizData)
+      console.log(quiz)
+    }
+  }, [quiz])
 
-  }, [res])
+  console.log(quiz);
 
   const handleUpdateQuiz = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log('Update Quiz:', quizData);
 
     try {
-      const response = await axios.patch(`/api/quizzes/${quizData.id}/`, quizData, {
+      const response = await axios.patch(`/api/quizzes/${quiz.id}/`, quizData, {
         validateStatus: () => true,
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
-      })
+      });
 
       if (response.status === 200) {
         console.log('Quiz updated successfully:', response.data);
       } else {
-        console.error('Failed to update quiz:', response.statusText)
+        console.error('Failed to update quiz:', response.statusText);
       }
     } catch (error) {
-      console.error('Error updating quiz:', error)
+      console.error('Error updating quiz:', error);
     }
   }
 
   const handleDeleteQuiz = async () => {
-    console.log('Delete Quiz:', quizData.id)
+    console.log('Delete Quiz:', quizData.id);
 
     try {
-      const response = await axios.delete(`/api/quizzes/${quizData.id}/`, {
+      const response = await axios.delete(`/api/quizzes/${quiz.id}/`, {
         validateStatus: () => true,
         headers: {
           Authorization: `Bearer ${getToken()}`,
@@ -120,8 +126,8 @@ export default function QuizEditOrDelete() {
       })
 
       if (response.status === 204) {
-        console.log('Quiz deleted successfully')
-        navigate(`profile/${user}`)
+        console.log('Quiz deleted successfully');
+        navigate(`/profile/${user}`);
       } else {
         console.error('Failed to delete quiz:', response.statusText);
       }
@@ -226,5 +232,5 @@ export default function QuizEditOrDelete() {
         </Button>
       </Form>
     </Container>
-  );
+  )
 }

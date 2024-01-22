@@ -13,7 +13,7 @@ import Register from './Components/Register.jsx'
 import Index from './Components/Index.jsx'
 import SingleQuizView from './Components/SingleQuizView.jsx';
 import QuizCreate from './Components/QuizCreate.jsx';
-import QuizEditOrDelete from './Components.QuizEditOrDelete.jsx'
+import QuizEditOrDelete from './Components/QuizEditOrDelete.jsx'
 
 // Actions
 import { loginUser, registerUser } from './utils/actions/auth.js'

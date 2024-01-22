@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import { activeUser } from "../utils/helpers/common";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
@@ -29,12 +29,12 @@ export default function Profile() {
           <div className="quizzes-container">
             <h2>Owned Quizzes</h2>
             <ul className="quiz-list">
-              {user.owned_quizzes &&
-                user.owned_quizzes.map((quiz) => (
-                  <li key={quiz.id} className="quiz-item">
-                    {quiz.name}
-                  </li>
-                ))}
+            {user.owned_quizzes &&
+              user.owned_quizzes.map((quiz) => (
+                <li key={quiz.id} className="quiz-item">
+                  <Link to={`/quizzes/${quiz.id}/edit`}>{quiz.name}</Link>
+                </li>
+              ))}
             </ul>
             <h2 className="mt-4">Completed Quizzes</h2>
             <ul className="quiz-list">
