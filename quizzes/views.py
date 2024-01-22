@@ -16,13 +16,10 @@ class QuizListCreateView(OwnerListCreateView):
 
 class QuizDetailView(RetrieveUpdateDestroyAPIView):
   queryset = Quiz.objects.all()
-  # Use the PopulatedQuizSerializer for detailed views
-  permission_classes = [ IsOwnerOrReadOnly]
+  permission_classes = [IsOwnerOrReadOnly]
 
   def get_serializer_class(self):
-    print('self request method ->', self.request.method)
-    if self.request.method == 'PUT':
-        return QuizSerializer
-    return PopulatedQuizSerializer
-  
+      if self.request.method == 'PUT':
+          return QuizSerializer
+      return PopulatedQuizSerializer
 

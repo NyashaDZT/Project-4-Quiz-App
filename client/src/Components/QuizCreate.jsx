@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { activeUser } from '../utils/helpers/common';
+import { useActionData } from 'react-router';
 
 export default function QuizCreate() {
+  const res = useActionData
   const user = activeUser()
   const [quizData, setQuizData] = useState({
     name: '',
@@ -82,7 +84,7 @@ export default function QuizCreate() {
   return (
     <Container>
       <h1>Create a Quiz</h1>
-      <Form>
+      <Form method="POST">
         <Form.Group controlId="quizName">
           <Form.Label>Quiz Name</Form.Label>
           <Form.Control
@@ -143,7 +145,7 @@ export default function QuizCreate() {
           Add Question
         </Button>
   
-        <Button variant="success" onClick={handleCreateQuiz}>
+        <Button variant="success" onClick={handleCreateQuiz} type="submit">
           Create Quiz
         </Button>
       </Form>

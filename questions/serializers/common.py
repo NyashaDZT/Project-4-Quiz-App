@@ -11,4 +11,4 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ('text', 'quiz', 'answers')
+        fields = '__all__'

@@ -20,6 +20,7 @@ class Quiz(models.Model):
         related_name='owned_quizzes',
         null=True
         )
+  
 
   def __str__(self):
     return f'{self.topic} - {self.name}'

@@ -1,8 +1,11 @@
 from .common import QuizSerializer
 from questions.serializers.common import QuestionSerializer
+from questions.serializers.populated import PopulatedQuestionSerializer
+from ..models import Quiz
 
 class PopulatedQuizSerializer(QuizSerializer):
-    questions = QuestionSerializer(many=True, read_only=True)
-    
-    class Meta(QuizSerializer.Meta):
-        fields = QuizSerializer.Meta.fields 
+    questions = PopulatedQuestionSerializer(many=True, read_only=True)
+
+    class Meta:
+        model= Quiz
+        fields = QuizSerializer.Meta.fields + ('questions',)
