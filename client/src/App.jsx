@@ -2,6 +2,7 @@ import { Outlet, useNavigation } from "react-router-dom"
 
 //Components
 import NavBar from "./Components/Navbar" 
+import Footer from "./Components/Footer"
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   )
 }
