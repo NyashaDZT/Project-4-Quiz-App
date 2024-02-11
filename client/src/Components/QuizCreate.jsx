@@ -109,7 +109,7 @@ export default function QuizCreate() {
       console.error('Error creating quiz:', error)
       // Handle any other errors that may occur during the API call
     }
-  };
+  }
 
   return (
     <Container>

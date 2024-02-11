@@ -13,3 +13,22 @@
   display: flex;
   justify-content: space-around;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* To space the buttons apart */
+  width: 100%; /* Assuming you want the container to span the entire width */
+}
+
+.blue-button {
+  background-color: blue; /* Set button background color to blue */
+  color: white; /* Set button text color to white */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.blue-button:hover {
+  background-color: darkblue; /* Darken button background color on hover */
+}

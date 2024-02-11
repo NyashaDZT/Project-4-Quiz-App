@@ -7,7 +7,7 @@ export default function Home() {
   const user = activeUser()
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 text-center"> {/* Add text-center class */}
       <Row className="justify-content-center">
         <Col xs={10} md={8} lg={6}>
           <h1>Welcome to Quizlympics</h1>
@@ -15,22 +15,22 @@ export default function Home() {
             Quizlympics is an exciting platform to test and enhance your knowledge.
             Get ready for a challenging quiz experience!
           </p>
-          <div className="text-center mt-4">
+          <div className="button-container mt-4"> {/* Add mt-4 for margin */}
             {user ? (
               <Link to="/quizzes">
-                <Button variant="success">
+                <Button variant="success" className="blue-button"> 
                   Explore Quizzes
                 </Button>
               </Link>
             ) : (
               <>
                 <Link to="/login">
-                  <Button variant="primary" className="mr-3">
+                  <Button variant="primary" className="blue-button mr-3"> 
                     Login
                   </Button>
                 </Link>
                 <Link to="/register">
-                  <Button variant="secondary">
+                  <Button variant="secondary" className="blue-button"> 
                     Register
                   </Button>
                 </Link>

@@ -1,0 +1,62 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$Y7Iw81gOFmVHRo2iTYoQBk$s80SUh0L5JUQq2eW6qoJQza+ALDq4ScEv5Ce/YYFOs8=",
+    "last_login": "2024-01-19T12:05:00.431Z",
+    "is_superuser": true,
+    "username": "nyasha",
+    "first_name": "",
+    "last_name": "",
+    "email": "nyasha@email.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-01-17T09:37:32.969Z",
+    "bio": null,
+    "profile_picture": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$NhNbXp279Crulj5RvqXbUp$6P7KTtBNPr1d4PxpSucUUljTOCQgeVxyfd+ReQGsUAU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "nyasha545",
+    "first_name": "",
+    "last_name": "",
+    "email": "nyasha12@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-17T16:16:46.832Z",
+    "bio": null,
+    "profile_picture": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$EqPKKgUlRteVmcOauho5W1$y1E+vW6spwfCWnz9EPFsrKK4AsGMOgKrFxLZvYS3Pwc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Tadiwa",
+    "first_name": "",
+    "last_name": "",
+    "email": "pass@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-19T14:25:49.233Z",
+    "bio": "I like bicycles",
+    "profile_picture": null,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

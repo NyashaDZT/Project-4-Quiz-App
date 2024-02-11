@@ -1,0 +1,80 @@
+[
+{
+  "model": "quizzes.quiz",
+  "pk": 10,
+  "fields": {
+    "name": "Sample Quiz",
+    "topic": "General Knowledge",
+    "number_of_questions": 5,
+    "time": 20,
+    "pass_score": 3,
+    "difficulty": "medium",
+    "owner": 2
+  }
+},
+{
+  "model": "quizzes.quiz",
+  "pk": 13,
+  "fields": {
+    "name": "General Knowledge Quiz",
+    "topic": "General Knowledge",
+    "number_of_questions": 8,
+    "time": 20,
+    "pass_score": 3,
+    "difficulty": "medium",
+    "owner": 2
+  }
+},
+{
+  "model": "quizzes.quiz",
+  "pk": 14,
+  "fields": {
+    "name": "Sports Quiz",
+    "topic": "Sports",
+    "number_of_questions": 5,
+    "time": 30,
+    "pass_score": 0,
+    "difficulty": "medium",
+    "owner": 2
+  }
+},
+{
+  "model": "quizzes.quiz",
+  "pk": 15,
+  "fields": {
+    "name": "Python and Django Quiz",
+    "topic": "Programming",
+    "number_of_questions": 7,
+    "time": 25,
+    "pass_score": 4,
+    "difficulty": "medium",
+    "owner": 2
+  }
+},
+{
+  "model": "quizzes.quiz",
+  "pk": 16,
+  "fields": {
+    "name": "Advanced JavaScript Coding",
+    "topic": "Programming",
+    "number_of_questions": 10,
+    "time": 30,
+    "pass_score": 6,
+    "difficulty": "hard",
+    "owner": 2
+  }
+},
+{
+  "model": "quizzes.quiz",
+  "pk": 17,
+  "fields": {
+    "name": "Religion Quiz",
+    "topic": "Religion",
+    "number_of_questions": 10,
+    "time": 15,
+    "pass_score": 7,
+    "difficulty": "medium",
+    "owner": 2
+  }
+}
+]
