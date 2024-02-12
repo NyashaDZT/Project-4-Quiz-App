@@ -8,6 +8,7 @@ export default function QuizEditOrDelete() {
   const quiz = useLoaderData()
   const navigate = useNavigate()
   const user = activeUser()
+  const [errorMsg, setErrorMsg] = useState(null)
 
   const [quizData, setQuizData] = useState({
     name: '',
@@ -108,6 +109,7 @@ export default function QuizEditOrDelete() {
         console.log('Quiz updated successfully:', response.data);
       } else {
         console.error('Failed to update quiz:', response.statusText);
+        setErrorMsg(response.statusText) 
       }
     } catch (error) {
       console.error('Error updating quiz:', error);
@@ -118,7 +120,7 @@ export default function QuizEditOrDelete() {
     console.log('Delete Quiz:', quizData.id);
 
     try {
-      const response = await axios.delete(`/api/quizzes/${quiz.id}/`, {
+      const response = await axios.delete(`/api/quizzes/${quiz.id}`, {
         validateStatus: () => true,
         headers: {
           Authorization: `Bearer ${getToken()}`,
@@ -218,6 +220,7 @@ export default function QuizEditOrDelete() {
             </Button>
           </div>
         ))}
+        {errorMsg && <p className="danger">{errorMsg}</p>}
         <div className='button-container'>
           <Button variant="primary" onClick={handleAddQuestion}>
             Add Question

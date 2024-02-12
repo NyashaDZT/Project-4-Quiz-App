@@ -14,7 +14,7 @@
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold; /* Make labels bold for better visibility */
+  font-weight: bold; 
 }
 
 .quizzes {
@@ -22,21 +22,21 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 900px; /* Set a max-width to limit the container size */
+  max-width: 1000px; 
   margin-left: auto;
   margin-right: auto;
 }
 
 .card {
-  width: 300px; /* Adjust the width as needed */
-  margin: 10px; /* Add margin for spacing */
+  width: 300px; 
+  margin: 10px; 
   max-height: 100px;
   cursor: pointer;
 }
 
 .card:hover {
-  transform: scale(1.03); /* Scale the card slightly on hover for a subtle effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+  transform: scale(1.03); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .card-body {

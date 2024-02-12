@@ -15,6 +15,11 @@ export default function Home() {
             Quizlympics is an exciting platform to test and enhance your knowledge.
             Get ready for a challenging quiz experience!
           </p>
+          {user ? 
+            <p></p>
+            :
+            <p>Please register to take part in Quizlympics!</p>
+          }
           <div className="button-container mt-4"> {/* Add mt-4 for margin */}
             {user ? (
               <Link to="/quizzes">
@@ -23,7 +28,7 @@ export default function Home() {
                 </Button>
               </Link>
             ) : (
-              <>
+              <> 
                 <Link to="/login">
                   <Button variant="primary" className="blue-button mr-3"> {/* Add blue-button class and mr-3 for margin */}
                     Login

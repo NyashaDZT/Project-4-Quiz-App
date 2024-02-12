@@ -26,7 +26,7 @@ export async function singleQuestionLoader(questionId) {
 }
 
 export async function profileLoader(userId) {
-  const res = await axios.get(`/api/auth/profile/${userId}/`, {
+  const res = await axios.get(`/api/auth/profile/${userId}`, {
     validateStatus: () => true,
     headers: {
         Authorization: `Bearer ${getToken()}`
