@@ -1,8 +1,9 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Form, useActionData, useNavigate } from "react-router-dom"
 import { setToken } from '../utils/helpers/common'
 
 export default function Login(){
+  const [error, setError] = useState(null)
   const res = useActionData()
   const navigate = useNavigate()
 
@@ -10,6 +11,8 @@ export default function Login(){
     if(res?.status === 200) {
       setToken(res.data.access)
       navigate('/quizzes')
+    } else if (res?.status >= 400 && res?.status < 600) { 
+      setError(res.statusText) 
     }
   }, [res, navigate])
 
@@ -19,8 +22,8 @@ export default function Login(){
       <Form className='form' id="loginForm" method="POST">
         <input type="text" name="username" placeholder='Username' />
         <input type="password" name="password" placeholder=" Password" />
+        {res && <p className='danger'>{error}</p>}
         <button className='btn btn-warning' type="submit">Login</button>
-        {res && <p className='danger'>{res.data.message}</p>}
       </Form>
     </>
   )

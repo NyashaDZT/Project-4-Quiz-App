@@ -10,19 +10,19 @@ export default function Filter({ quizzes, setFilteredQuizzes }) {
     let filtered = quizzes;
 
     if (selectedTopic) {
-      filtered = filtered.filter((quiz) => quiz.topic === selectedTopic);
+      filtered = filtered.filter((quiz) => quiz.topic === selectedTopic)
     }
 
     if (selectedDifficulty) {
-      filtered = filtered.filter((quiz) => quiz.difficulty === selectedDifficulty);
+      filtered = filtered.filter((quiz) => quiz.difficulty === selectedDifficulty)
     }
 
     if (selectedNumQuestions) {
-      filtered = filtered.filter((quiz) => quiz.number_of_questions === parseInt(selectedNumQuestions));
+      filtered = filtered.filter((quiz) => quiz.number_of_questions === parseInt(selectedNumQuestions))
     }
 
     setFilteredQuizzes(filtered);
-  }, [quizzes, selectedTopic, selectedDifficulty, selectedNumQuestions, setFilteredQuizzes]);
+  }, [quizzes, selectedTopic, selectedDifficulty, selectedNumQuestions, setFilteredQuizzes])
 
   return (
     <div className="filter-container">
@@ -63,5 +63,5 @@ export default function Filter({ quizzes, setFilteredQuizzes }) {
         </select>
       </div>
     </div>
-  );
+  )
 }

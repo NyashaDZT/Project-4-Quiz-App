@@ -22,7 +22,7 @@ export default function Index(){
   return (
     <>
       <Row>
-        <Col xs={4} md={4} id="filters">
+        <Col xs={4} md={4} id="filters" className="d-flex align-items-center justify-content-center" >
           <Filter quizzes={quizzes} setFilteredQuizzes={setFilteredQuizzes} />
         </Col>
         <Col xs={14} md={8}>

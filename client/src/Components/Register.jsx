@@ -5,32 +5,34 @@ import ImageUploadField from './ImageUploadField'
 
 export default function Register(){
   console.log(`Hit register page`)
+  const [error, setError] = useState(null)
+  const [ formData, setFormData ] = useState({
+    username: '',
+    email: '',
+    password: '',
+    password_confirmation: '',
+    profile_picture: '',
+    bio: ''
+  })
 
-const [ formData, setFormData ] = useState({
-  username: '',
-  email: '',
-  password: '',
-  password_confirmation: '',
-  profile_picture: '',
-  bio: ''
-})
-
-function handleChange(e){
-  setFormData({ ...formData, [e.target.name]: e.target.value })
-}
-
-  const res = useActionData()
-  const navigate = useNavigate()
-
-  const printFormData = () => {
-    console.log('Form Data:', formData)
+  function handleChange(e){
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  useEffect(()=> {
-    if(res?.status === 201) {
-      navigate('/login')
+    const res = useActionData()
+    const navigate = useNavigate()
+
+    const printFormData = () => {
+      console.log('Form Data:', formData)
     }
-  }, [res, navigate])
+
+    useEffect(()=> {
+      if(res?.status === 201) {
+        navigate('/login')
+      } else if (res?.status >= 400 && res?.status < 600) { 
+        setError(res.statusText) 
+      }
+    }, [res, navigate])
 
   return(
     <>
@@ -42,8 +44,8 @@ function handleChange(e){
         <input type="password" name="password_confirmation" placeholder=' Confirm password' onChange={handleChange} />
         <ImageUploadField value={formData.image} setFormData={setFormData} />
         <input type="text" name="bio" placeholder='Bio - about you' onChange={handleChange} />
+        {res && <p className='danger'>{error}</p>}
         <button className='btn btn-warning' type="submit" onClick={printFormData}>Register</button>
-        {res && <p className='danger'>{res.data.message}</p>}
       </Form>
     </>
   )

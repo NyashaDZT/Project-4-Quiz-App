@@ -13,3 +13,21 @@
   display: flex;
   justify-content: space-around;
 }
+
+.blue-button {
+  background-color: blue; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.blue-button:hover {
+  background-color: darkblue; 
+}
+
+.quiz-create-container {
+  max-height: 80vh; 
+  overflow-y: auto; 
+}

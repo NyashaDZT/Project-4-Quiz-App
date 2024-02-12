@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router';
-import { removeToken, activeUser, getToken } from '../utils/helpers/common'
+import { removeToken, activeUser } from '../utils/helpers/common'
 
 export default function NavBar(){
 
@@ -25,9 +25,9 @@ export default function NavBar(){
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-            <Nav.Link href="/quizzes">Quizzes</Nav.Link>
             {activeUser() ? (
               <>
+                <Nav.Link href="/quizzes">Quizzes</Nav.Link>
                 <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
                 <NavDropdown title="More Options" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="/createquiz">Create A Quiz</NavDropdown.Item>

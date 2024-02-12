@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 export default function QuizCreate() {
+  const [errorMsg, setErrorMsg] = useState(null)
   const navigate = useNavigate()
   const user = activeUser()
 
@@ -64,6 +65,7 @@ export default function QuizCreate() {
 
   const handleAddQuestion = () => {
     if (quizData.number_of_questions < 10) {
+      console.log("add question clicked")
       setQuizData((prevData) => ({
         ...prevData,
         number_of_questions: prevData.number_of_questions+ 1,
@@ -94,7 +96,7 @@ export default function QuizCreate() {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
-      });
+      })
   
       if (response.status === 200) {
         console.log('Quiz created successfully:', response.data)
@@ -102,16 +104,17 @@ export default function QuizCreate() {
         navigate('/quizzes')
       } else {
         console.error('Failed to create quiz:', response.statusText)
-        // Handle the error case if needed
+        setErrorMsg(response.statusText) 
+
       }
     } catch (error) {
       console.error('Error creating quiz:', error)
-      // Handle any other errors that may occur during the API call
+      
     }
-  };
+  }
 
   return (
-    <Container>
+    <Container className="quiz-create-container">
       <h1>Create a Quiz</h1>
       <Form method="POST" onSubmit={handleCreateQuiz}>
         <Form.Group controlId="quizName">
@@ -158,7 +161,7 @@ export default function QuizCreate() {
               </Form.Control>
             </Form.Group>
   
-        {[...Array(quizData.questionsCount)].map((_, questionIndex) => (
+        {[...Array(quizData.number_of_questions)].map((_, questionIndex) => (
           <div key={questionIndex}>
             <Form.Group controlId={`question-${questionIndex}`}>
               <Form.Label>{`Question ${questionIndex + 1}`}</Form.Label>
@@ -192,7 +195,7 @@ export default function QuizCreate() {
             </Button>
           </div>
         ))}
-  
+        {errorMsg && <p className="danger">{errorMsg}</p>}
         <div className='button-container'>
           <Button variant="primary" onClick={handleAddQuestion}>
             Add Question
