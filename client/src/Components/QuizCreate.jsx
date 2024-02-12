@@ -18,6 +18,7 @@ export default function QuizCreate() {
     time: 20,
     pass_score: 0,
     owner: user,
+    difficulty: 'easy',
     questions: [{ text: '', answers: [{ text: '', correct: false }] }],
   })
 

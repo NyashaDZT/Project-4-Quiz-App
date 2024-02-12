@@ -1,0 +1,1960 @@
+[
+{
+  "model": "questions.question",
+  "pk": 41,
+  "fields": {
+    "text": "What is the capital of France?",
+    "quiz": 10,
+    "created": "2024-01-18T15:13:52.307Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 42,
+  "fields": {
+    "text": "Which planet is known as the Red Planet?",
+    "quiz": 10,
+    "created": "2024-01-18T15:13:52.429Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 43,
+  "fields": {
+    "text": "What is the largest mammal on Earth?",
+    "quiz": 10,
+    "created": "2024-01-18T15:13:52.551Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 44,
+  "fields": {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "quiz": 10,
+    "created": "2024-01-18T15:13:52.668Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 45,
+  "fields": {
+    "text": "What is the capital of Japan?",
+    "quiz": 10,
+    "created": "2024-01-18T15:13:52.787Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 52,
+  "fields": {
+    "text": "What is the capital of France?",
+    "quiz": 13,
+    "created": "2024-01-22T10:44:54.417Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 53,
+  "fields": {
+    "text": "Which planet is known as the Red Planet?",
+    "quiz": 13,
+    "created": "2024-01-22T10:44:54.554Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 54,
+  "fields": {
+    "text": "What is the largest mammal on Earth?",
+    "quiz": 13,
+    "created": "2024-01-22T10:44:54.676Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 55,
+  "fields": {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "quiz": 13,
+    "created": "2024-01-22T10:44:54.794Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 56,
+  "fields": {
+    "text": "What is the capital of Japan?",
+    "quiz": 13,
+    "created": "2024-01-22T10:44:54.917Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 57,
+  "fields": {
+    "text": "Which sport is known as the 'beautiful game'?",
+    "quiz": 14,
+    "created": "2024-01-22T10:46:19.190Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 58,
+  "fields": {
+    "text": "In which year did the first modern Olympic Games take place?",
+    "quiz": 14,
+    "created": "2024-01-22T10:46:19.348Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 59,
+  "fields": {
+    "text": "Who is often referred to as 'The Greatest' in boxing?",
+    "quiz": 14,
+    "created": "2024-01-22T10:46:19.497Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 60,
+  "fields": {
+    "text": "Which country hosted the 2016 Summer Olympics?",
+    "quiz": 14,
+    "created": "2024-01-22T10:46:19.650Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 61,
+  "fields": {
+    "text": "In golf, what is the term for a score of one stroke under par on a hole?",
+    "quiz": 14,
+    "created": "2024-01-22T10:46:19.804Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 62,
+  "fields": {
+    "text": "What is Django?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:02.619Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 63,
+  "fields": {
+    "text": "In Python, how do you comment a single line?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:02.777Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 64,
+  "fields": {
+    "text": "Which function is used to read user input in Python?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:02.934Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 65,
+  "fields": {
+    "text": "What does MVC stand for in the context of web development?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:03.090Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 66,
+  "fields": {
+    "text": "Which of the following is a valid Django URL pattern?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:03.249Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 67,
+  "fields": {
+    "text": "What command is used to create a Django migration?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:03.399Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 68,
+  "fields": {
+    "text": "In Python, what does the 'self' keyword represent?",
+    "quiz": 15,
+    "created": "2024-01-22T10:48:03.557Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 69,
+  "fields": {
+    "text": "What is the output of the following code: console.log(2 + '2' - 1)?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:09.900Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 70,
+  "fields": {
+    "text": "What is the closure in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.059Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 71,
+  "fields": {
+    "text": "What will the following code output? console.log(3 == '3');",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.217Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 72,
+  "fields": {
+    "text": "What is the purpose of the 'use strict' directive in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.377Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 73,
+  "fields": {
+    "text": "What is the difference between 'let' and 'var' in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.535Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 74,
+  "fields": {
+    "text": "What does the 'this' keyword refer to in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.695Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 75,
+  "fields": {
+    "text": "What will the following code output: console.log(1 + '1' + 1)?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:10.858Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 76,
+  "fields": {
+    "text": "What is the purpose of the 'bind' method in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:11.016Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 77,
+  "fields": {
+    "text": "Which of the following is a valid way to create an array in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:11.174Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 78,
+  "fields": {
+    "text": "What is the purpose of the 'NaN' value in JavaScript?",
+    "quiz": 16,
+    "created": "2024-01-22T10:54:11.337Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 79,
+  "fields": {
+    "text": "Who is considered the founder of Buddhism?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.206Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 80,
+  "fields": {
+    "text": "In Hinduism, who is the god of destruction?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.375Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 81,
+  "fields": {
+    "text": "Which religious text is central to Judaism?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.529Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 82,
+  "fields": {
+    "text": "Who is the central prophet in Islam?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.681Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 83,
+  "fields": {
+    "text": "What is the holy book of Christianity?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.835Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 84,
+  "fields": {
+    "text": "In Sikhism, who is the founder and first Guru?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:51.992Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 85,
+  "fields": {
+    "text": "Which ancient Egyptian goddess is associated with love, beauty, and fertility?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:52.146Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 86,
+  "fields": {
+    "text": "What is the central religious text of Zoroastrianism?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:52.305Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 87,
+  "fields": {
+    "text": "Who is the founder of Jainism?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:52.459Z"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 88,
+  "fields": {
+    "text": "In Shinto, what is the name of the sun goddess?",
+    "quiz": 17,
+    "created": "2024-01-22T11:03:52.615Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 118,
+  "fields": {
+    "text": "Paris",
+    "correct": true,
+    "question": 41,
+    "created": "2024-01-18T15:13:52.338Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 119,
+  "fields": {
+    "text": "Berlin",
+    "correct": false,
+    "question": 41,
+    "created": "2024-01-18T15:13:52.367Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 120,
+  "fields": {
+    "text": "Madrid",
+    "correct": false,
+    "question": 41,
+    "created": "2024-01-18T15:13:52.397Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 121,
+  "fields": {
+    "text": "Mars",
+    "correct": true,
+    "question": 42,
+    "created": "2024-01-18T15:13:52.460Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 122,
+  "fields": {
+    "text": "Venus",
+    "correct": false,
+    "question": 42,
+    "created": "2024-01-18T15:13:52.490Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 123,
+  "fields": {
+    "text": "Jupiter",
+    "correct": false,
+    "question": 42,
+    "created": "2024-01-18T15:13:52.519Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 124,
+  "fields": {
+    "text": "Elephant",
+    "correct": false,
+    "question": 43,
+    "created": "2024-01-18T15:13:52.578Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 125,
+  "fields": {
+    "text": "Blue Whale",
+    "correct": true,
+    "question": 43,
+    "created": "2024-01-18T15:13:52.607Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 126,
+  "fields": {
+    "text": "Giraffe",
+    "correct": false,
+    "question": 43,
+    "created": "2024-01-18T15:13:52.637Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 127,
+  "fields": {
+    "text": "Charles Dickens",
+    "correct": false,
+    "question": 44,
+    "created": "2024-01-18T15:13:52.698Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 128,
+  "fields": {
+    "text": "William Shakespeare",
+    "correct": true,
+    "question": 44,
+    "created": "2024-01-18T15:13:52.726Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 129,
+  "fields": {
+    "text": "Jane Austen",
+    "correct": false,
+    "question": 44,
+    "created": "2024-01-18T15:13:52.755Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 130,
+  "fields": {
+    "text": "Seoul",
+    "correct": false,
+    "question": 45,
+    "created": "2024-01-18T15:13:52.817Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 131,
+  "fields": {
+    "text": "Beijing",
+    "correct": false,
+    "question": 45,
+    "created": "2024-01-18T15:13:52.847Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 132,
+  "fields": {
+    "text": "Tokyo",
+    "correct": true,
+    "question": 45,
+    "created": "2024-01-18T15:13:52.875Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 150,
+  "fields": {
+    "text": "Paris",
+    "correct": true,
+    "question": 52,
+    "created": "2024-01-22T10:44:54.453Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 151,
+  "fields": {
+    "text": "Berlin",
+    "correct": false,
+    "question": 52,
+    "created": "2024-01-22T10:44:54.493Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 152,
+  "fields": {
+    "text": "Madrid",
+    "correct": false,
+    "question": 52,
+    "created": "2024-01-22T10:44:54.523Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 153,
+  "fields": {
+    "text": "Mars",
+    "correct": true,
+    "question": 53,
+    "created": "2024-01-22T10:44:54.587Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 154,
+  "fields": {
+    "text": "Venus",
+    "correct": false,
+    "question": 53,
+    "created": "2024-01-22T10:44:54.617Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 155,
+  "fields": {
+    "text": "Jupiter",
+    "correct": false,
+    "question": 53,
+    "created": "2024-01-22T10:44:54.646Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 156,
+  "fields": {
+    "text": "Elephant",
+    "correct": false,
+    "question": 54,
+    "created": "2024-01-22T10:44:54.704Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 157,
+  "fields": {
+    "text": "Blue Whale",
+    "correct": true,
+    "question": 54,
+    "created": "2024-01-22T10:44:54.732Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 158,
+  "fields": {
+    "text": "Giraffe",
+    "correct": false,
+    "question": 54,
+    "created": "2024-01-22T10:44:54.761Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 159,
+  "fields": {
+    "text": "Charles Dickens",
+    "correct": false,
+    "question": 55,
+    "created": "2024-01-22T10:44:54.825Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 160,
+  "fields": {
+    "text": "William Shakespeare",
+    "correct": true,
+    "question": 55,
+    "created": "2024-01-22T10:44:54.854Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 161,
+  "fields": {
+    "text": "Jane Austen",
+    "correct": false,
+    "question": 55,
+    "created": "2024-01-22T10:44:54.881Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 162,
+  "fields": {
+    "text": "Seoul",
+    "correct": false,
+    "question": 56,
+    "created": "2024-01-22T10:44:54.946Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 163,
+  "fields": {
+    "text": "Beijing",
+    "correct": false,
+    "question": 56,
+    "created": "2024-01-22T10:44:54.975Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 164,
+  "fields": {
+    "text": "Tokyo",
+    "correct": true,
+    "question": 56,
+    "created": "2024-01-22T10:44:55.003Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 165,
+  "fields": {
+    "text": "Football",
+    "correct": true,
+    "question": 57,
+    "created": "2024-01-22T10:46:19.221Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 166,
+  "fields": {
+    "text": "Basketball",
+    "correct": false,
+    "question": 57,
+    "created": "2024-01-22T10:46:19.250Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 167,
+  "fields": {
+    "text": "Tennis",
+    "correct": false,
+    "question": 57,
+    "created": "2024-01-22T10:46:19.279Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 168,
+  "fields": {
+    "text": "Golf",
+    "correct": false,
+    "question": 57,
+    "created": "2024-01-22T10:46:19.317Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 169,
+  "fields": {
+    "text": "1896",
+    "correct": true,
+    "question": 58,
+    "created": "2024-01-22T10:46:19.377Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 170,
+  "fields": {
+    "text": "1900",
+    "correct": false,
+    "question": 58,
+    "created": "2024-01-22T10:46:19.406Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 171,
+  "fields": {
+    "text": "1920",
+    "correct": false,
+    "question": 58,
+    "created": "2024-01-22T10:46:19.438Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 172,
+  "fields": {
+    "text": "1952",
+    "correct": false,
+    "question": 58,
+    "created": "2024-01-22T10:46:19.467Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 173,
+  "fields": {
+    "text": "Muhammad Ali",
+    "correct": true,
+    "question": 59,
+    "created": "2024-01-22T10:46:19.528Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 174,
+  "fields": {
+    "text": "Mike Tyson",
+    "correct": false,
+    "question": 59,
+    "created": "2024-01-22T10:46:19.560Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 175,
+  "fields": {
+    "text": "Floyd Mayweather",
+    "correct": false,
+    "question": 59,
+    "created": "2024-01-22T10:46:19.589Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 176,
+  "fields": {
+    "text": "Manny Pacquiao",
+    "correct": false,
+    "question": 59,
+    "created": "2024-01-22T10:46:19.619Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 177,
+  "fields": {
+    "text": "Brazil",
+    "correct": true,
+    "question": 60,
+    "created": "2024-01-22T10:46:19.681Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 178,
+  "fields": {
+    "text": "Russia",
+    "correct": false,
+    "question": 60,
+    "created": "2024-01-22T10:46:19.711Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 179,
+  "fields": {
+    "text": "United States",
+    "correct": false,
+    "question": 60,
+    "created": "2024-01-22T10:46:19.742Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 180,
+  "fields": {
+    "text": "China",
+    "correct": false,
+    "question": 60,
+    "created": "2024-01-22T10:46:19.772Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 181,
+  "fields": {
+    "text": "Birdie",
+    "correct": true,
+    "question": 61,
+    "created": "2024-01-22T10:46:19.832Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 182,
+  "fields": {
+    "text": "Eagle",
+    "correct": false,
+    "question": 61,
+    "created": "2024-01-22T10:46:19.862Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 183,
+  "fields": {
+    "text": "Bogey",
+    "correct": false,
+    "question": 61,
+    "created": "2024-01-22T10:46:19.891Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 184,
+  "fields": {
+    "text": "Par",
+    "correct": false,
+    "question": 61,
+    "created": "2024-01-22T10:46:19.922Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 185,
+  "fields": {
+    "text": "A programming language",
+    "correct": false,
+    "question": 62,
+    "created": "2024-01-22T10:48:02.653Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 186,
+  "fields": {
+    "text": "A web framework for Python",
+    "correct": true,
+    "question": 62,
+    "created": "2024-01-22T10:48:02.684Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 187,
+  "fields": {
+    "text": "A database management system",
+    "correct": false,
+    "question": 62,
+    "created": "2024-01-22T10:48:02.716Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 188,
+  "fields": {
+    "text": "An operating system",
+    "correct": false,
+    "question": 62,
+    "created": "2024-01-22T10:48:02.746Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 189,
+  "fields": {
+    "text": "// Comment",
+    "correct": false,
+    "question": 63,
+    "created": "2024-01-22T10:48:02.807Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 190,
+  "fields": {
+    "text": "# Comment",
+    "correct": true,
+    "question": 63,
+    "created": "2024-01-22T10:48:02.838Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 191,
+  "fields": {
+    "text": "-- Comment",
+    "correct": false,
+    "question": 63,
+    "created": "2024-01-22T10:48:02.870Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 192,
+  "fields": {
+    "text": "/* Comment */",
+    "correct": false,
+    "question": 63,
+    "created": "2024-01-22T10:48:02.904Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 193,
+  "fields": {
+    "text": "input()",
+    "correct": true,
+    "question": 64,
+    "created": "2024-01-22T10:48:02.965Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 194,
+  "fields": {
+    "text": "get_input()",
+    "correct": false,
+    "question": 64,
+    "created": "2024-01-22T10:48:02.995Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 195,
+  "fields": {
+    "text": "read_input()",
+    "correct": false,
+    "question": 64,
+    "created": "2024-01-22T10:48:03.026Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 196,
+  "fields": {
+    "text": "user_input()",
+    "correct": false,
+    "question": 64,
+    "created": "2024-01-22T10:48:03.056Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 197,
+  "fields": {
+    "text": "Model View Control",
+    "correct": false,
+    "question": 65,
+    "created": "2024-01-22T10:48:03.127Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 198,
+  "fields": {
+    "text": "Model View Controller",
+    "correct": true,
+    "question": 65,
+    "created": "2024-01-22T10:48:03.156Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 199,
+  "fields": {
+    "text": "Multiple View Controller",
+    "correct": false,
+    "question": 65,
+    "created": "2024-01-22T10:48:03.188Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 200,
+  "fields": {
+    "text": "Many Variables Control",
+    "correct": false,
+    "question": 65,
+    "created": "2024-01-22T10:48:03.219Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 201,
+  "fields": {
+    "text": "/home-page",
+    "correct": true,
+    "question": 66,
+    "created": "2024-01-22T10:48:03.280Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 202,
+  "fields": {
+    "text": "homePage()",
+    "correct": false,
+    "question": 66,
+    "created": "2024-01-22T10:48:03.310Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 203,
+  "fields": {
+    "text": "home-page",
+    "correct": false,
+    "question": 66,
+    "created": "2024-01-22T10:48:03.338Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 204,
+  "fields": {
+    "text": "homePage",
+    "correct": false,
+    "question": 66,
+    "created": "2024-01-22T10:48:03.370Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 205,
+  "fields": {
+    "text": "django make:migration",
+    "correct": false,
+    "question": 67,
+    "created": "2024-01-22T10:48:03.428Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 206,
+  "fields": {
+    "text": "python manage.py makemigrations",
+    "correct": true,
+    "question": 67,
+    "created": "2024-01-22T10:48:03.462Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 207,
+  "fields": {
+    "text": "python migrate",
+    "correct": false,
+    "question": 67,
+    "created": "2024-01-22T10:48:03.494Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 208,
+  "fields": {
+    "text": "django manage:migrate",
+    "correct": false,
+    "question": 67,
+    "created": "2024-01-22T10:48:03.525Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 209,
+  "fields": {
+    "text": "The class itself",
+    "correct": false,
+    "question": 68,
+    "created": "2024-01-22T10:48:03.587Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 210,
+  "fields": {
+    "text": "An instance of the class",
+    "correct": true,
+    "question": 68,
+    "created": "2024-01-22T10:48:03.618Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 211,
+  "fields": {
+    "text": "A static variable",
+    "correct": false,
+    "question": 68,
+    "created": "2024-01-22T10:48:03.648Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 212,
+  "fields": {
+    "text": "A reserved keyword",
+    "correct": false,
+    "question": 68,
+    "created": "2024-01-22T10:48:03.676Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 213,
+  "fields": {
+    "text": "22",
+    "correct": false,
+    "question": 69,
+    "created": "2024-01-22T10:54:09.932Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 214,
+  "fields": {
+    "text": "21",
+    "correct": true,
+    "question": 69,
+    "created": "2024-01-22T10:54:09.965Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 215,
+  "fields": {
+    "text": "23",
+    "correct": false,
+    "question": 69,
+    "created": "2024-01-22T10:54:09.998Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 216,
+  "fields": {
+    "text": "NaN",
+    "correct": false,
+    "question": 69,
+    "created": "2024-01-22T10:54:10.029Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 217,
+  "fields": {
+    "text": "A way to protect variables from being modified",
+    "correct": false,
+    "question": 70,
+    "created": "2024-01-22T10:54:10.092Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 218,
+  "fields": {
+    "text": "A way to implement encapsulation",
+    "correct": false,
+    "question": 70,
+    "created": "2024-01-22T10:54:10.125Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 219,
+  "fields": {
+    "text": "A combination of a function and the lexical environment within which that function was declared",
+    "correct": true,
+    "question": 70,
+    "created": "2024-01-22T10:54:10.156Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 220,
+  "fields": {
+    "text": "A method of defining private variables in JavaScript",
+    "correct": false,
+    "question": 70,
+    "created": "2024-01-22T10:54:10.186Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 221,
+  "fields": {
+    "text": "true",
+    "correct": true,
+    "question": 71,
+    "created": "2024-01-22T10:54:10.250Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 222,
+  "fields": {
+    "text": "false",
+    "correct": false,
+    "question": 71,
+    "created": "2024-01-22T10:54:10.282Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 223,
+  "fields": {
+    "text": "undefined",
+    "correct": false,
+    "question": 71,
+    "created": "2024-01-22T10:54:10.312Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 224,
+  "fields": {
+    "text": "TypeError",
+    "correct": false,
+    "question": 71,
+    "created": "2024-01-22T10:54:10.344Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 225,
+  "fields": {
+    "text": "To enable modern JavaScript features",
+    "correct": false,
+    "question": 72,
+    "created": "2024-01-22T10:54:10.408Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 226,
+  "fields": {
+    "text": "To improve code performance",
+    "correct": false,
+    "question": 72,
+    "created": "2024-01-22T10:54:10.440Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 227,
+  "fields": {
+    "text": "To enforce stricter parsing and error handling in the code",
+    "correct": true,
+    "question": 72,
+    "created": "2024-01-22T10:54:10.472Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 228,
+  "fields": {
+    "text": "To allow the use of undeclared variables",
+    "correct": false,
+    "question": 72,
+    "created": "2024-01-22T10:54:10.505Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 229,
+  "fields": {
+    "text": "'let' is block-scoped, while 'var' is function-scoped",
+    "correct": true,
+    "question": 73,
+    "created": "2024-01-22T10:54:10.566Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 230,
+  "fields": {
+    "text": "'let' is used for global variables, while 'var' is used for local variables",
+    "correct": false,
+    "question": 73,
+    "created": "2024-01-22T10:54:10.597Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 231,
+  "fields": {
+    "text": "'var' is block-scoped, while 'let' is function-scoped",
+    "correct": false,
+    "question": 73,
+    "created": "2024-01-22T10:54:10.632Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 232,
+  "fields": {
+    "text": "There is no difference, and both can be used interchangeably",
+    "correct": false,
+    "question": 73,
+    "created": "2024-01-22T10:54:10.663Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 233,
+  "fields": {
+    "text": "The current function",
+    "correct": false,
+    "question": 74,
+    "created": "2024-01-22T10:54:10.733Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 234,
+  "fields": {
+    "text": "The global object",
+    "correct": false,
+    "question": 74,
+    "created": "2024-01-22T10:54:10.764Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 235,
+  "fields": {
+    "text": "The object on which the current function is invoked",
+    "correct": true,
+    "question": 74,
+    "created": "2024-01-22T10:54:10.794Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 236,
+  "fields": {
+    "text": "The parent function",
+    "correct": false,
+    "question": 74,
+    "created": "2024-01-22T10:54:10.825Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 237,
+  "fields": {
+    "text": "111",
+    "correct": true,
+    "question": 75,
+    "created": "2024-01-22T10:54:10.889Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 238,
+  "fields": {
+    "text": "12",
+    "correct": false,
+    "question": 75,
+    "created": "2024-01-22T10:54:10.921Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 239,
+  "fields": {
+    "text": "21",
+    "correct": false,
+    "question": 75,
+    "created": "2024-01-22T10:54:10.952Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 240,
+  "fields": {
+    "text": "3",
+    "correct": false,
+    "question": 75,
+    "created": "2024-01-22T10:54:10.986Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 241,
+  "fields": {
+    "text": "To create a new object",
+    "correct": false,
+    "question": 76,
+    "created": "2024-01-22T10:54:11.047Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 242,
+  "fields": {
+    "text": "To bind a function to a specific value of 'this'",
+    "correct": true,
+    "question": 76,
+    "created": "2024-01-22T10:54:11.078Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 243,
+  "fields": {
+    "text": "To attach an event handler to an HTML element",
+    "correct": false,
+    "question": 76,
+    "created": "2024-01-22T10:54:11.112Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 244,
+  "fields": {
+    "text": "To concatenate two or more strings",
+    "correct": false,
+    "question": 76,
+    "created": "2024-01-22T10:54:11.143Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 245,
+  "fields": {
+    "text": "let arr = new Array()",
+    "correct": false,
+    "question": 77,
+    "created": "2024-01-22T10:54:11.205Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 246,
+  "fields": {
+    "text": "let arr = [1, 2, 3]",
+    "correct": true,
+    "question": 77,
+    "created": "2024-01-22T10:54:11.240Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 247,
+  "fields": {
+    "text": "let arr = Array(1, 2, 3)",
+    "correct": true,
+    "question": 77,
+    "created": "2024-01-22T10:54:11.271Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 248,
+  "fields": {
+    "text": "All of the above",
+    "correct": false,
+    "question": 77,
+    "created": "2024-01-22T10:54:11.302Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 249,
+  "fields": {
+    "text": "To represent a syntax error",
+    "correct": false,
+    "question": 78,
+    "created": "2024-01-22T10:54:11.369Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 250,
+  "fields": {
+    "text": "To indicate the end of a numeric value",
+    "correct": false,
+    "question": 78,
+    "created": "2024-01-22T10:54:11.399Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 251,
+  "fields": {
+    "text": "To represent 'Not a Number'",
+    "correct": true,
+    "question": 78,
+    "created": "2024-01-22T10:54:11.429Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 252,
+  "fields": {
+    "text": "To denote an undefined variable",
+    "correct": false,
+    "question": 78,
+    "created": "2024-01-22T10:54:11.462Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 253,
+  "fields": {
+    "text": "Jesus Christ",
+    "correct": false,
+    "question": 79,
+    "created": "2024-01-22T11:03:51.240Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 254,
+  "fields": {
+    "text": "Buddha",
+    "correct": true,
+    "question": 79,
+    "created": "2024-01-22T11:03:51.273Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 255,
+  "fields": {
+    "text": "Prophet Muhammad",
+    "correct": false,
+    "question": 79,
+    "created": "2024-01-22T11:03:51.314Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 256,
+  "fields": {
+    "text": "Moses",
+    "correct": false,
+    "question": 79,
+    "created": "2024-01-22T11:03:51.346Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 257,
+  "fields": {
+    "text": "Brahma",
+    "correct": false,
+    "question": 80,
+    "created": "2024-01-22T11:03:51.405Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 258,
+  "fields": {
+    "text": "Vishnu",
+    "correct": false,
+    "question": 80,
+    "created": "2024-01-22T11:03:51.436Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 259,
+  "fields": {
+    "text": "Shiva",
+    "correct": true,
+    "question": 80,
+    "created": "2024-01-22T11:03:51.469Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 260,
+  "fields": {
+    "text": "Ganesha",
+    "correct": false,
+    "question": 80,
+    "created": "2024-01-22T11:03:51.499Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 261,
+  "fields": {
+    "text": "Bible",
+    "correct": false,
+    "question": 81,
+    "created": "2024-01-22T11:03:51.559Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 262,
+  "fields": {
+    "text": "Quran",
+    "correct": false,
+    "question": 81,
+    "created": "2024-01-22T11:03:51.591Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 263,
+  "fields": {
+    "text": "Torah",
+    "correct": true,
+    "question": 81,
+    "created": "2024-01-22T11:03:51.621Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 264,
+  "fields": {
+    "text": "Vedas",
+    "correct": false,
+    "question": 81,
+    "created": "2024-01-22T11:03:51.651Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 265,
+  "fields": {
+    "text": "Abraham",
+    "correct": false,
+    "question": 82,
+    "created": "2024-01-22T11:03:51.713Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 266,
+  "fields": {
+    "text": "Moses",
+    "correct": false,
+    "question": 82,
+    "created": "2024-01-22T11:03:51.742Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 267,
+  "fields": {
+    "text": "Jesus Christ",
+    "correct": false,
+    "question": 82,
+    "created": "2024-01-22T11:03:51.771Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 268,
+  "fields": {
+    "text": "Prophet Muhammad",
+    "correct": true,
+    "question": 82,
+    "created": "2024-01-22T11:03:51.802Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 269,
+  "fields": {
+    "text": "Bible",
+    "correct": true,
+    "question": 83,
+    "created": "2024-01-22T11:03:51.864Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 270,
+  "fields": {
+    "text": "Quran",
+    "correct": false,
+    "question": 83,
+    "created": "2024-01-22T11:03:51.894Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 271,
+  "fields": {
+    "text": "Tripitaka",
+    "correct": false,
+    "question": 83,
+    "created": "2024-01-22T11:03:51.931Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 272,
+  "fields": {
+    "text": "Vedas",
+    "correct": false,
+    "question": 83,
+    "created": "2024-01-22T11:03:51.962Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 273,
+  "fields": {
+    "text": "Guru Nanak",
+    "correct": true,
+    "question": 84,
+    "created": "2024-01-22T11:03:52.022Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 274,
+  "fields": {
+    "text": "Guru Gobind Singh",
+    "correct": false,
+    "question": 84,
+    "created": "2024-01-22T11:03:52.052Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 275,
+  "fields": {
+    "text": "Guru Tegh Bahadur",
+    "correct": false,
+    "question": 84,
+    "created": "2024-01-22T11:03:52.082Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 276,
+  "fields": {
+    "text": "Guru Arjan Dev",
+    "correct": false,
+    "question": 84,
+    "created": "2024-01-22T11:03:52.116Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 277,
+  "fields": {
+    "text": "Isis",
+    "correct": true,
+    "question": 85,
+    "created": "2024-01-22T11:03:52.180Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 278,
+  "fields": {
+    "text": "Hathor",
+    "correct": false,
+    "question": 85,
+    "created": "2024-01-22T11:03:52.211Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 279,
+  "fields": {
+    "text": "Bastet",
+    "correct": false,
+    "question": 85,
+    "created": "2024-01-22T11:03:52.241Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 280,
+  "fields": {
+    "text": "Sekhmet",
+    "correct": false,
+    "question": 85,
+    "created": "2024-01-22T11:03:52.272Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 281,
+  "fields": {
+    "text": "Vendidad",
+    "correct": false,
+    "question": 86,
+    "created": "2024-01-22T11:03:52.335Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 282,
+  "fields": {
+    "text": "Avesta",
+    "correct": true,
+    "question": 86,
+    "created": "2024-01-22T11:03:52.365Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 283,
+  "fields": {
+    "text": "Zend-Avesta",
+    "correct": false,
+    "question": 86,
+    "created": "2024-01-22T11:03:52.395Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 284,
+  "fields": {
+    "text": "Gathas",
+    "correct": false,
+    "question": 86,
+    "created": "2024-01-22T11:03:52.428Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 285,
+  "fields": {
+    "text": "Mahavira",
+    "correct": true,
+    "question": 87,
+    "created": "2024-01-22T11:03:52.489Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 286,
+  "fields": {
+    "text": "Gautama Buddha",
+    "correct": false,
+    "question": 87,
+    "created": "2024-01-22T11:03:52.521Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 287,
+  "fields": {
+    "text": "Adi Shankara",
+    "correct": false,
+    "question": 87,
+    "created": "2024-01-22T11:03:52.553Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 288,
+  "fields": {
+    "text": "Rishabhanatha",
+    "correct": false,
+    "question": 87,
+    "created": "2024-01-22T11:03:52.583Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 289,
+  "fields": {
+    "text": "Izanagi",
+    "correct": false,
+    "question": 88,
+    "created": "2024-01-22T11:03:52.644Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 290,
+  "fields": {
+    "text": "Amaterasu",
+    "correct": true,
+    "question": 88,
+    "created": "2024-01-22T11:03:52.676Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 291,
+  "fields": {
+    "text": "Susano-o",
+    "correct": false,
+    "question": 88,
+    "created": "2024-01-22T11:03:52.707Z"
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 292,
+  "fields": {
+    "text": "Inari",
+    "correct": false,
+    "question": 88,
+    "created": "2024-01-22T11:03:52.739Z"
+  }
+}
+]

@@ -12,7 +12,7 @@ import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
 import Index from './components/Index.jsx'
 import SingleQuizView from './components/SingleQuizView.jsx';
-import QuizCreate from './components/QuizCreate.jsx';
+import QuizCreate from './Components/QuizCreate.jsx';
 import QuizEditOrDelete from './components/QuizEditOrDelete.jsx'
 
 // Actions

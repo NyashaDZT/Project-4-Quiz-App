@@ -30,12 +30,12 @@ export default function Home() {
             ) : (
               <> 
                 <Link to="/login">
-                  <Button variant="primary" className="blue-button mr-3"> {/* Add blue-button class and mr-3 for margin */}
+                  <Button variant="primary" className="blue-button mr-3"> 
                     Login
                   </Button>
                 </Link>
                 <Link to="/register">
-                  <Button variant="secondary" className="blue-button"> {/* Add blue-button class */}
+                  <Button variant="secondary" className="blue-button"> 
                     Register
                   </Button>
                 </Link>
