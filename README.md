@@ -46,9 +46,11 @@ Clone the repository:
 ![Screenshot 2024-01-23 at 11 09 04](https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/0ae411f8-d81a-4e89-b258-5a9bdb78ab05)
 
 Navigate to the project directory:
+
 <img width="171" alt="Screenshot 2024-02-13 at 10 02 59" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/abfa5ee0-121e-4667-aab5-80ba4a336bdb">
 
 Install dependencies:
+
 <img width="604" alt="Screenshot 2024-02-13 at 10 07 04" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/e267dac4-225f-4757-8578-75e6835be433">
 
 Database Setup:
@@ -56,9 +58,11 @@ Database Setup:
 Create a PostgreSQL database and update in “settings.py” within the root project folder.
 
 Run Migrations:
+
 <img width="601" alt="Screenshot 2024-02-13 at 10 08 32" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/ba4e464c-44bb-43a0-8122-3cdf8cc9e7d7">
 
 Run the application:
+
 <img width="599" alt="Screenshot 2024-02-13 at 10 08 45" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/fa2e839f-a76f-4711-ae57-0be2f92f149a">
 
 ## Open your browser:
@@ -92,7 +96,8 @@ Wireframe:
 Initial ERD:
 <img width="510" alt="Screenshot 2024-02-13 at 10 19 51" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/d194f601-2f39-499f-a017-f1e36bfac9da">
 
-Project Structure - Backend
+## Project Structure - Backend
+
 The backend is powered by Django and Django REST Framework, offering robust API endpoints for user authentication, quiz management, and result tracking.
 api: Django REST Framework files for API endpoints.
 users: Django app for user-related functionalities.
@@ -101,18 +106,22 @@ results: Django app for result-related functionalities.
 Questions: Django app for question & answer-related functionalities.
 Within the Quiz App I picked a fairly complex but interconnected system that encapsulated the relationships between quizzes, questions answers and user results and the relationships where as follows:
 
-Quizzes and Questions
+## Quizzes and Questions
 Each quiz could have multiple questions associated with it.
 Questions were linked to quizzes through a foreign key relationship allowing each question to belong to a specific quiz:
-The quiz model.<img width="287" alt="Screenshot 2024-02-13 at 10 20 55" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/d524f6ed-7759-46f8-8ce5-9754059e0198">
+The quiz model.
+
+<img width="287" alt="Screenshot 2024-02-13 at 10 20 55" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/d524f6ed-7759-46f8-8ce5-9754059e0198">
 
 Questions and Answers
 Questions in turn could also have multiple answers, as the quizzes are designed only for multiple choice, answers were modeled to belong to a specific question through a one-to-many relationship. Each answer had a Boolean field for “correct”, with only the correct answer being set to true.
+
 <img width="604" alt="Screenshot 2024-02-13 at 10 34 53" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/ddccc561-78e5-428f-b8dc-eda22a1e9655">
 
-User Results
+## User Results
 The results model was used to keep a track of the users results, this stored information about the user, the quiz they attempted and their corresponding score.
 When a user completed a quiz the score was calculated and stored in an instance of the results. By linking the user ID, quiz ID, we would then be able to analyse a user’s performance within a specific quiz and use that information to inform the user if they had passed or failed the quiz.
+
 <img width="461" alt="Screenshot 2024-02-13 at 10 39 20" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/61c76c70-4b9c-48d0-8fae-221cf596f254">
 
 # Frontend
@@ -162,7 +171,10 @@ Bugs & Future Improvements
 During the development of the Quizlympics site, several bugs were encountered and addressed to enhance the overall user experience and functionality. One notable issue was related to the quiz update feature in the user profile. Initially, there were difficulties in pre-populating the quiz edit form with existing data, hindering users from smoothly updating their quizzes. This was resolved by carefully adjusting the useEffect hook to ensure that quiz data is correctly set upon loading the edit page. Additionally, while implementing the quiz creation page, some challenges were faced in managing the dynamic addition of questions and answers. The initial implementation had occasional issues with adding answers to newly created questions. This was addressed by refining the logic in the handleAddAnswer function, ensuring a seamless process for users to add and modify questions and answers dynamically. These bug fixes were crucial to providing a stable and reliable platform for users to create, edit, and take quizzes without encountering unexpected disruptions.
 
 During the deployment phase, challenges arose with certain endpoints, notably the login function and user creation. The issues led to unexpected behaviour, hindering the seamless operation of these critical features on the live site. Diagnosing and addressing deployment-related problems can be complex, involving considerations such as server configuration, environment variables, or networking issues. Rest assured, resolving these deployment challenges is a top priority, and the necessary steps will be taken to ensure that all endpoints, including login and user creation, function as intended. Users can expect a reliable and fully operational platform as these deployment issues are meticulously addressed and rectified.
-Contributing
+
+
+## Contributing
+
 If you'd like to contribute to Quizlympics, please follow these steps:
 Fork the repository.
 Create a new branch.
