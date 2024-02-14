@@ -22,7 +22,7 @@ Profile Page: Users have a dedicated profile page displaying their bio, profile 
 
 ## Technologies Used
 
-## Frontend:
+**Frontend:**
 - React
 - React Router
 - React Bootstrap
@@ -31,45 +31,45 @@ Profile Page: Users have a dedicated profile page displaying their bio, profile 
 - JWT incl SimpleJWT
 
 
-## Backend:
+**Backend:**
 - Django incl. Pip, Django-environ for virtual environment.
 - Django REST Framework
 - PostgreSQL
-## API:
+**API:**
 - RESTful API design
 - Token-based authentication
-## Deployment & Project Setup:
+**Deployment & Project Setup:**
 - Git, Github, Heroku
 
-# Getting Started
+## Getting Started
 Clone the repository:
 ![Screenshot 2024-01-23 at 11 09 04](https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/0ae411f8-d81a-4e89-b258-5a9bdb78ab05)
 
-Navigate to the project directory:
+**Navigate to the project directory:**
 
 <img width="171" alt="Screenshot 2024-02-13 at 10 02 59" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/abfa5ee0-121e-4667-aab5-80ba4a336bdb">
 
-Install dependencies:
+**Install dependencies:**
 
 <img width="604" alt="Screenshot 2024-02-13 at 10 07 04" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/e267dac4-225f-4757-8578-75e6835be433">
 
-Database Setup:
+**Database Setup:**
 
 Create a PostgreSQL database and update in “settings.py” within the root project folder.
 
-Run Migrations:
+**Run Migrations:**
 
 <img width="601" alt="Screenshot 2024-02-13 at 10 08 32" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/ba4e464c-44bb-43a0-8122-3cdf8cc9e7d7">
 
-Run the application:
+**Run the application:**
 
 <img width="599" alt="Screenshot 2024-02-13 at 10 08 45" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/fa2e839f-a76f-4711-ae57-0be2f92f149a">
 
-## Open your browser:
+**Open your browser:**
 - Frontend: http://localhost:5173
 - Backend: http://localhost:8000
   
-## Technical Requirements
+**Technical Requirements**
 - Build a full-stack application
 - Use a Python Django API 
 - Consume your API with a separate front-end built with React
@@ -79,13 +79,13 @@ Run the application:
 - Have a visually impressive design
 - Be deployed online
 
-## Necessary Deliverables
+**Necessary Deliverables**
 - A working app hosted on the internet
 - A link to your hosted working app in the URL section of your Github repo
 - Git repository hosted on Github, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
 
 
-# Planning
+## Planning
 
 Planning was completed with the use of Excalidraw for the creation of a basic wireframe, and an ERD was also created, these changed during development.
 
@@ -124,7 +124,7 @@ When a user completed a quiz the score was calculated and stored in an instance 
 
 <img width="461" alt="Screenshot 2024-02-13 at 10 39 20" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/61c76c70-4b9c-48d0-8fae-221cf596f254">
 
-# Frontend
+## Frontend
 The frontend is built using React.js, providing a dynamic and responsive user interface. Key components include:
 Navbar: Navigation bar for easy access to quizzes, login, and registration.
 Quiz Pages: Display quizzes, allow quiz creation, and provide a quiz-taking interface.
@@ -142,7 +142,7 @@ The Filter component, on the other hand, utilises the useState and useEffect hoo
 
 Overall, this filtering mechanism provides users with a dynamic and interactive way to refine their quiz search based on different criteria, enhancing the user experience and making the application more versatile. The other components were fairly straight forward in their design and challenges and other wins have been listed below within the readme.
 
-# Challenges:
+## Challenges:
 
 During the development of the Quiz App, I encountered several challenges on the backend that required careful problem-solving and debugging. 
 One notable issue revolved around the integration of many-to-many relationships and handling categories for quizzes. Initially, there were difficulties in properly configuring and updating the database schema to accommodate the desired data structure. Specifically, I faced issues with the handling of categories, leading to errors such as direct assignment to the forward side of a many-to-many set being prohibited. Resolving this required a comprehensive understanding of Django's model relationships and migrations. Through collaborative troubleshooting and persistent debugging, I successfully implemented a solution that took out the need for the redundant categories model, instead implementing a “topic” field on the quiz model, which simplified the process and gave me a way of implementing and categorising the quizzes of a certain topic, however because this meant that each quiz was limited to a single category.
@@ -154,7 +154,7 @@ Setting up the create quiz page presented challenges that required tailored adju
 These adjustments ensure that the data sent from the create quiz page is properly organised and can be easily handled by the backend, contributing to a more streamlined and effective workflow. 
 
 
-# Wins
+## Wins
 
 Remarkably, the Quizlympics app was developed with impressive speed, achieving functionality and usability within just four days of dedicated work. This rapid turnaround is a testament to the efficiency and skill exhibited during the app's creation. The focused effort and strategic planning employed throughout the development process allowed for the swift integration of features such as quiz creation, user profiles, and quiz completion tracking. Despite the tight timeline, the app stands as a testament to effective project management and agile development practices, showcasing the ability to deliver a fully functional and user-friendly quiz platform in a remarkably short timeframe.
 
@@ -166,7 +166,9 @@ Another win accomplished during development was a good use of logic  in allowing
 The dynamic rendering of JSX based on the number of questions and answers in the quiz data allows for a seamless and interactive quiz creation interface. Users can see and modify questions and answers in real-time, with the ability to add new answers dynamically using the ‘handleAddAnswer’ function. This approach enhances the user experience by providing an intuitive and responsive quiz-building process.
 
 <img width="459" alt="Screenshot 2024-02-13 at 10 52 37" src="https://github.com/NyashaDZT/Project-4-Quiz-App/assets/124045473/de7851de-5979-4e80-8357-f742e8c41a36"> CreateQuiz page.
-Bugs & Future Improvements
+
+
+## Bugs & Future Improvements
 
 During the development of the Quizlympics site, several bugs were encountered and addressed to enhance the overall user experience and functionality. One notable issue was related to the quiz update feature in the user profile. Initially, there were difficulties in pre-populating the quiz edit form with existing data, hindering users from smoothly updating their quizzes. This was resolved by carefully adjusting the useEffect hook to ensure that quiz data is correctly set upon loading the edit page. Additionally, while implementing the quiz creation page, some challenges were faced in managing the dynamic addition of questions and answers. The initial implementation had occasional issues with adding answers to newly created questions. This was addressed by refining the logic in the handleAddAnswer function, ensuring a seamless process for users to add and modify questions and answers dynamically. These bug fixes were crucial to providing a stable and reliable platform for users to create, edit, and take quizzes without encountering unexpected disruptions.
 
@@ -176,9 +178,9 @@ During the deployment phase, challenges arose with certain endpoints, notably th
 ## Contributing
 
 If you'd like to contribute to Quizlympics, please follow these steps:
-Fork the repository.
-Create a new branch.
-Make your changes.
-Create a pull request.
+* Fork the repository.
+* Create a new branch.
+* Make your changes.
+* Create a pull request.
 
 
